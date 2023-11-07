@@ -1,0 +1,47 @@
+.logo {
+  height: 5%;
+  width: 100px;
+  float: left;
+}
+
+.navbar {
+  background-color: #9A846D;
+  padding: 10px 0;
+  /* Espacio interno arriba y abajo del contenido del navbar */
+  text-align: right;
+  /* Centrar el contenido del navbar */
+  font-weight: bold;
+  /* Para poner negrita la letra*/
+}
+
+.navbar-nav {
+  list-style: none;
+  /* Elimina los marcadores de lista predeterminados */
+  display: flex;
+  /* Hace que los elementos de la lista se distribuyan horizontalmente */
+  justify-content: flex-end;
+  /* Alinea los elementos a la derecha */
+  padding: 0;
+  /* Elimina el relleno predeterminado de la lista */
+}
+
+.nav-item {
+  margin-left: 20px;
+  /* Agrega un espacio entre los elementos */
+}
+
+.nav-link {
+  text-decoration: none;
+  /* Quita el subrayado de los enlaces */
+  color: #fff;
+}
+
+.titulo {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img-fluid {
+  height: 8%;
+  width: 100%;
+}

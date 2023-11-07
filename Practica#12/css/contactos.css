@@ -1,0 +1,99 @@
+/*Colores de Marca*/
+.fa-facebook {
+    background:#1877f2;
+} 
+ 
+.fa-linkedin {
+    background:#0a66c2;
+}
+ 
+.fa-twitter {
+    background: #1da1f2;
+}
+ 
+.fa-instagram {
+    background: #c32aa3;
+}
+ 
+.fa-youtube {
+    background: #ff0000;
+}
+ 
+/*Agregar estilos adicionales a iconos*/
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.redes i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.redes a {
+    text-decoration: none;
+}
+ 
+.redes i:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+    opacity: .9;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact, .location {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(196, 126, 196);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #800080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #800080;
+}
