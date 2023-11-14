@@ -1,0 +1,154 @@
+/* Reset de estilos para la lista no ordenada */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para elementos de lista como inline-block con un poco de margen */
+li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/* Estilos para etiquetas de anclaje (enlaces) */
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para el contenedor de navegación */
+.nav-wrapper {
+    background-color: #ff8a80;
+    padding: 25px;
+}
+
+/* Estilos para el contenido del desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para elementos de lista dentro del desplegable */
+.dropdown-content li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Mostrar contenido del desplegable al pasar el ratón sobre el elemento de activación */
+.dropdown-trigger:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para un título */
+.titulo {
+    text-align: center;
+    color: rgb(48, 88, 7);
+}
+
+/* Estilos para un contenedor */
+.container {
+    margin: 20px;
+    margin: auto;
+    /* Centrar el contenedor */
+}
+
+/* Estilos para la cabecera de la tabla con texto verde lima */
+thead.lime-text {
+    background-color: rgb(183, 219, 51);
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+/* Estilos para el cuerpo de la tabla con texto verde */
+tbody.green-text {
+    background-color: rgb(250, 139, 129);
+    color: rgb(10, 20, 10);
+    text-align: center;
+    border: 2px solid #000;
+}
+
+/* Estilos para una tabla con efecto de resaltado */
+table.hightlight {
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    text-align: center;
+    border: 2px solid #000;
+    line-height: 2.0;
+}
+
+/* Estilos para una tabla centrada */
+table.centered {
+    margin: auto;
+    width: 100%;
+}
+
+/* Estilos para un contenedor centrado */
+.container.center {
+    text-align: center;
+    margin: 20px;
+    margin: auto;
+}
+
+/* Estilos para un botón */
+button.btn {
+    background-color: rgb(183, 219, 51);
+    color: green;
+    padding: 12px 20px;
+    margin: 5px;
+    border: 2px solid #000;
+}
+
+/* Estilos para un botón con enlace */
+a.btn {
+    background-color: rgb(250, 139, 129);
+    color: rgb(85, 112, 10);
+    padding: 16px 20px;
+    margin: 10px;
+    border: 2px solid #000;
+}
+
+/* Estilos para íconos de Material Design */
+.material-icons {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Estilos para el pie de página */
+.page-footer {
+    background-color: rgb(250, 139, 129);
+    color: #4b4141;
+    margin: auto;
+}
+
+/* Estilos para enlaces dentro del pie de página */
+.page-footer a {
+    color: #080606;
+}
+
+/* Efecto al pasar el ratón sobre enlaces dentro del pie de página */
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Limitar el ancho del contenedor */
+.container {
+    max-width: 1200px;
+}
+
+/* Estilos para una fila con margen inferior */
+.row {
+    margin-bottom: 1;
+}
+
+/* Estilos para la sección de derechos de autor en el pie de página */
+.footer-copyright {
+    background-color: #222;
+    color: #ccc;
+    padding: 10px 0;
+}
