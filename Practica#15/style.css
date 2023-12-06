@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(78, 151, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+}
+
+.titulo{
+    font-size: 20px;
+}
+
+input{
+    width: 50px;
+    text-align: center;
+    margin: 5px;
+    font-size: 26px;
+}
+
+button{
+    background-color: rgb(52, 165, 180);
+    text-align: center;
+    height: 40px;
+    padding: 12px;
+    font-size: 16px;
+}
