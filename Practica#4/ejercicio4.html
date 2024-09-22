@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+<style>
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        padding: 20px;
+    }
+
+    .item{
+        background: rgb(221, 219, 219);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .item2{
+        background: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div class="contenedor">
+        <div class="item">
+            <h2>Pendientes</h2>
+            <div class="item2">tarea 1</div>
+            <div class="item2">tarea 2</div>
+        </div>
+        <div class="item">
+            <h2>En Progreso</h2>
+        </div>
+        <div class="item">
+            <h2>Completas</h2>
+        </div>
+    </div>
+</body>
+</html>

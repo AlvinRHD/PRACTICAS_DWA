@@ -1,0 +1,15 @@
+/*Acá comienza la clase contenedor que ubicamos en nuestro codigo html*/
+.contenedor{
+    display: grid;/*Nos ayuda a ver donde se va a ubicar un elemento de nuestro cpdigo html*/
+    grid-template-columns: repeat(2, 1fr);/*Este es el numero de columnas que tiene nuestra pagina*/
+    grid-template-rows: 2fr 2fr;/*Este es el numero de filas de nuestra cuadricula*/
+    grid-gap: 10px;/*Este es el espacio entre las columnas y las filas*/
+}
+
+.cajas{
+    width: 470px;/*Esto es el ancho de la img*/
+    height: 100px;/*Esto es la altura de la img*/
+    position: relative;/*Esto es el posicionamiento de los elementos de html*/
+    overflow: hidden;/*Overflow recorta un elemento y el hidden esconde. elimina lo sobrante*/
+    background: aqua;/*Esto es el color de las cajas*/
+}

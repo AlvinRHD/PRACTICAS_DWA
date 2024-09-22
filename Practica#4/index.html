@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica3</title>
+</head>
+<style>
+    .item{
+        display: grid;
+        grid-template-areas: "header piePagina Tercero";
+    }
+    .element{
+        grid-area: header;
+        background-color: rgb(255, 149, 0);
+        justify-self: start;/*Alineacion horizontal*/
+        align-self: center;/*Alineacion vertical*/
+        padding: 50px;/*Espacio en elementos*/
+        text-align: center;
+    }
+
+    .element2{
+        grid-area: piePagina;
+        background-color: aqua;
+        justify-self: start;
+        align-self: center;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .element3{
+        grid-area: Tercero;
+        background-color: rgb(221, 26, 75);
+        justify-self: start;
+        align-self: center;
+        padding: 50px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="item">
+        <div class="element">Cabecera</div>
+        <div class="element2">PiePag</div>
+        <div class="element3">Tercero</div>
+    </div>
+</body>
+</html>

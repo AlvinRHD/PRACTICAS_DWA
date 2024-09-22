@@ -1,0 +1,170 @@
+body {
+  background-color: black;
+  /*Fondo*/
+}
+
+h1 {
+  color: white;
+}
+
+/*Aquí hacemos la definición del estilo de la retícula*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*4 columnas*/
+  grid-template-rows: repeat(6, auto);
+  /*6 filas*/
+  gap: 10px;
+  /*Espacio entre las celldas*/
+}
+
+/*Estilo de las celdas de la retícula*/
+.grid-item {
+  position: relative;
+  /* Posición relativa para elementos de html*/
+  overflow: hidden;
+  /* Oculta contenido*/
+}
+
+/* Estilo de las imágenes dentro de cada celda */
+.grid-item img {
+  width: 100%;
+  /* Imagen ocupa el ancho completo*/
+  height: auto;
+  /* Altura automática*/
+  transition: transform 0.3s;
+  /* Transición al hacer hover */
+}
+
+/* Efecto de zoom en la imagen al hacer hover en la celda */
+.grid-item:hover img {
+  transform: scale(1.1);
+  /* Escala de imagen aumentada en 1.1(busque en youtube) */
+}
+
+/* Estilo del título descriptivo en la parte superior de la imagen */
+.title {
+  position: absolute;
+  /* Posición absoluta para superponerlo al contenido que nosotros tenemos*/
+  top: 0;
+  /* Colocado en la parte superior de la celda como lo pide el ejercicio*/
+  left: 0;
+  /* Colocado en la parte izquierda */
+  width: 100%;
+  /* Ancho completo*/
+  background-color: rgba(197, 191, 191, 0.7);
+  /* Fondo transparentegris*/
+  color: white;
+  /* Texto en color blanco */
+  text-align: center;
+  /*Texto al centro */
+  padding: 5px;
+  /* Espaciado interno del título */
+  opacity: 0;
+  /*Con esto oculto */
+  transition: opacity 0.3s;
+  /* Transición al hacer hover */
+}
+
+/* Mostrar el título al hacer hover en la celda */
+.grid-item:hover .title {
+  opacity: 1;
+  /* Mostrar el título */
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*Segundo ejercicio*/
+/* Estilo de la retícula */
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* 5 columnas */
+  grid-template-rows: repeat(3, auto);
+  /* 3 filas  */
+  gap: 10px;
+  /* Espacio entre celdas */
+}
+
+/* Estilos*/
+.grid-item2 {
+  position: relative;
+  /* Posición relativa*/
+  overflow: hidden;
+  /* Ocultar contenido */
+  border: 1px solid #1713f1;
+  /* Borde para resaltar celdas */
+}
+
+/* Estilo de los elementos multimedia dentro de cada celda */
+.grid-item2 .media {
+  width: 100%;
+  /* Elemento multimedia ocupa el ancho completo*/
+  height: 100%;
+  /* Elemento multimedia ocupa la altura completa*/
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*Tercer ejercicio*/
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columnas con ancho igualmente dividido */
+  grid-template-rows: repeat(2, auto);
+  /* 2 filas con altura automática según contenido */
+  gap: 10px;
+  /* Espacio entre celdas */
+}
+
+/* Estilo de cada celda de la retícula */
+.grid-item3 {
+  padding: 10px;
+  /* Espaciado interno de la celda */
+  border: 1px solid #ccc;
+  /* Borde para resaltar la celda */
+}
+
+/* Estilo del cuadro de texto */
+.texto {
+  width: 100%;
+  /* Cuadro de texto ocupa el ancho completo de la celda */
+  height: 100px;
+  /* Altura fija del cuadro de texto */
+  border: 1px solid #ccc;
+  /* Borde para resaltar el cuadro de texto */
+  resize: none;
+  /* Evitar que el cuadro de texto sea redimensionable */
+  padding: 5px;
+  /* Espaciado interno del cuadro de texto */
+}
+
+/* Estilo del contador de caracteres */
+.contador {
+  color: #999;
+  /* Color del contador de caracteres */
+  text-align: right;
+  /* Alineación a la derecha */
+}
+
+/*-----------------------------------------------*/
+/*Cuarto ejercicio*/
+.contenedor4 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px 20px;
+}
+
+.item4 {
+  text-align: center;
+}
+
+/*Cambie el tamaño a pequeño para que sea miniatura*/
+.item4 img {
+  width: 20%;
+  transition: all 300ms;
+  position: relative;
+}
+
+/*use transform para cambiar la escala de las imagenes*/
+.item4 img:hover {
+  transform: scale(9.50);
+}

@@ -1,0 +1,39 @@
+/*Ejercicio 3*/
+/*Estilo personalizado para las tarjetas*/
+.custom-card{
+margin: 30px;/*Agrega espacio en la parte superior de las tarjetas*/
+flex: 0;
+width: 100px;/*Ancho de las tarjetas*/
+}
+
+/*Estilo para el titulo de la tarjeta*/
+.card-title{
+    background-color: #332703;
+    color: white;
+    margin: 4px;
+    height: 40px;/*Altura del titulo reducido*/
+    text-align: center;
+    padding: 10px 10px;/*reduzc el padding para hacerlo mas compacto*/
+}
+
+/*Estilo para el cuerpo de la tarjeta*/
+.card-body{
+    padding: 20px;
+}
+
+/*Estilo para el pie de la tarjeta*/
+.card-footer{
+    height: 40px;/*Altura del pie reducida*/
+    text-align: center;
+    color: #065c0e;
+    padding: 6px;/*Reduzco el padding para hacerlo mas compacto*/
+}
+
+/*Estilo para la imagen dentro de una tarjeta*/
+.card img{
+    display: block;/*Hacen que las imagenes sean elementos de bloque*/
+    margin: 0 auto;/*centra la img horizontalmente en sus contenedores*/
+    max-width: 100%;/*Establece el ancho maximo de la imagen al 100% del contenedor*/
+    border-radius: 5px;/*Agrega esquinas redondeadas a la imagen*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);/*Agrega una sombra a la imagen*/
+}

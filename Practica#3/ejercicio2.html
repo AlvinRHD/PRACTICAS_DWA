@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+</head>
+<style>
+
+/* Definición de la retícula de 4 columnas y 1 fila */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px; /* Espacio entre las tarjetas */
+}
+
+.tarjeta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+    "image image"
+    "title precio";
+  grid-gap: 5px; /* Espacio etre la tarjeta*/
+  border: 1px solid #eb1313; /* Borde de la tarjeta */
+  padding: 10px; /* Espaciado interno de la tarjeta */
+}
+
+/* Estilos para la imagen del producto */
+.img {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el título del producto */
+.title {
+  grid-area: title;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilos para el precio del producto */
+.producto {
+  grid-area: precio;
+  font-size: 16px;
+  color: #c4aba8;
+}
+
+</style>
+<div class="container">
+
+    <div class="tarjeta">
+        <img src="11.jpg" alt="Producto 1" class="img">
+        <h2 class="title">Producto 1</h2>
+        <p class="producto">$10</p>
+    </div>
+
+    <div class="tarjeta">
+        <img src="11.jpg" alt="Producto 2" class="img">
+        <h2 class="title">Producto 2</h2>
+        <p class="producto">$10</p>
+    </div>
+
+    <div class="tarjeta">
+        <img src="11.jpg" alt="Producto 3" class="img">
+        <h2 class="title">Producto 3</h2>
+        <p class="producto">$10</p>
+    </div>
+
+    <div class="tarjeta">
+        <img src="11.jpg" alt="Producto 4" class="img">
+        <h2 class="title">Producto 4</h2>
+        <p class="producto">$10</p>
+    </div>
+</div>
+    
+</body>
+</html>

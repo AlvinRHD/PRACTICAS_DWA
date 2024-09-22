@@ -1,0 +1,18 @@
+.container {
+    text-align: center;
+  }
+  
+  .titulo {
+    font-weight: bold;
+    font-family: Arial, sans-serif; /* Cambia el tipo de letra según tus preferencias */
+  }
+  
+
+.card-container {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    margin: 0 10px; /* Añade margen entre las tarjetas si es necesario */
+  }
+  

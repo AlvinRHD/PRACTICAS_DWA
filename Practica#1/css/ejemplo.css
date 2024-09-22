@@ -1,0 +1,18 @@
+/*Acá comienza la clase contenedor que ubicamos en nuestro codigo html*/
+.contenedor{
+    display: grid;/*Nos ayuda a ver donde se va a ubicar un elemento de nuestro cpdigo html*/
+    grid-template-columns: repeat(3, 1fr);/*Este es el numero de columnas que tiene nuestra pagina*/
+    grid-template-rows: repeat(4, 1fr);/*Este es el numero de filas de nuestra cuadricula*/
+    grid-gap: 10px 20px;/*Este es el espacio entre las columnas y las filas*/
+}
+
+/*Acá comienza la clase item que ubicamos en nuestro codigo html*/
+.item{
+    text-align: center;/*Esto alinea las cosas al centro*/
+}
+
+/*Acá le damos el valor a las img que tenemos en nuestro html*/
+.item img{
+    max-width: 100%;/*Esto es la anchura de la img*/
+    height: auto;/*Esto es l altura de la img*/
+}

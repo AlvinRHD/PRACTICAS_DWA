@@ -1,0 +1,78 @@
+
+/* Estilos para las filas */
+.row {
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Estilos para las columnas en dispositivos medianos */
+@media (min-width: 770px) {
+    .col-md-1 {
+        background-color: rgb(38, 187, 97);
+        border: 1px solid rgb(48, 32, 32); /* Borde negro de 1 pixel alrededor de las columnas */
+        flex: 10%; /* Configuración del tamaño de la columna */
+        max-width: 10%; /* Configuración del tamaño máximo de la columna */
+    }
+    .col-md-2 {
+        flex: 10%;
+        max-width: 10%;
+    }
+    .col-md-3 {
+        flex: 25%;
+        max-width: 25%;
+    }
+    .col-md-4 {
+        background-color: rgb(91, 114, 116);
+        border: 1px solid rgb(58, 42, 42); /* Borde negro de 1 pixel alrededor de las columnas */
+        display: flex; /* Usa el modelo de caja flexible */
+        flex-wrap: nowrap; /* Permite que el contenido de las columnas se envuelva */
+        flex: 10%;
+        max-width: 10%;
+    }
+    .col-md-5 {
+        flex: 10%;
+        max-width: 10%;
+    }
+    .col-md-6 {
+        background-color: rgb(148, 150, 53);
+        border: 1px solid rgb(56, 36, 36); /* Borde negro de 1 pixel alrededor de las columnas */
+        display: flex; /* Usa el modelo de caja flexible */
+        flex-wrap: nowrap; /* Permite que el contenido de las columnas se envuelva */
+        flex: 10%;
+        max-width: 10%;
+    }
+    .col-md-7 {
+        flex: 10%;
+        max-width: 10%;
+    }
+    .col-md-8 {
+        background-color: rgb(78, 120, 122);
+        border: 1px solid rgb(49, 27, 27); /* Borde negro de 1 pixel alrededor de las columnas */
+        display: flex; /* Usa el modelo de caja flexible */
+        flex-wrap: nowrap; /* Permite que el contenido de las columnas se envuelva */
+        flex: 10%;
+        max-width: 10%;
+    }
+    .col-md-9 {
+        flex: 10%;
+        max-width: 10%;
+    }
+    .col-md-10 {
+        flex: 10%;
+        max-width: 10%;
+    }
+    .col-md-11 {
+        flex: 10%;
+        max-width: 10%;
+    }
+    .col-md-12 {
+        flex: 10%;
+        max-width: 10%;
+    }
+}
+
+/* Estilos para las columnas con contenido */
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    position: relative; /* Configura la posición relativa para las columnas */
+    width: 100%; /* Establece el ancho de las columnas al 100% */
+}

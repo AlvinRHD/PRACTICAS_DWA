@@ -1,0 +1,77 @@
+/* Establece margen y relleno predeterminados a 0 para todos los elementos */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Establece un fondo de color y un relleno para todo el cuerpo del documento */
+body {
+    min-height: 100vh;
+    background-color: #ccc;
+    padding: 2ch;
+}
+
+/* Configura un diseño de cuadrícula para la clase .layout */
+.layout {
+    display: grid;
+    grid-template-columns: repeat(var(--index, auto-fit), minmax(320px, 1fr));
+    gap: 2ch;
+    height: 100vh;
+    width: 100%;
+    list-style-type: none;
+}
+
+/* Establece un estilo para las tarjetas (cards) en la cuadrícula */
+.card {
+    display: grid;
+    /* Centra el contenido de la tarjeta vertical y horizontalmente */
+    place-items: center;
+    min-height: 320px;
+}
+
+/* Establece el estilo de la primera tarjeta en la cuadrícula */
+.card:nth-child(1) {
+    background-color: rgb(159, 255, 223);
+    /* Define eñ múmero de columnas que ocupa en la cuadrícula */
+    grid-column: var(--colum, span 2);
+}
+
+/* Establece el estilo de las otras tarjetas en la cuadrícula */
+.card:nth-child(2) {
+    background-color: rgb(174, 255, 255);
+}
+
+.card:nth-child(3) {
+    background-color: rgb(255, 237, 157);
+}
+
+.card:nth-child(4) {
+    background-color: rgb(138, 179, 255);
+}
+
+.card:nth-child(5) {
+    background-color: rgb(255, 139, 187);
+}
+
+/* Media query para pantallas con un ancho máximo de 720px */
+@media (max-width: 720px) {
+
+    /* Cambia el número de columnas que ocupan las tarjetas de la cuadrícula */
+    .card {
+        --colum: 1 / -1;
+    }
+
+    /* Ajusta el alto de la primera tarjeta para ocupar toda la altura de la pantalla */
+    .card:first-child {
+        height: 100vh;
+    }
+}
+
+/* Media query para pantallas con un ancho mínimo de 1320px */
+@media (min-width: 1320px) {
+
+    /* Cambia el número de columnas de la cuadrícula */
+    .layout {
+        --index: 3;
+    }
+}

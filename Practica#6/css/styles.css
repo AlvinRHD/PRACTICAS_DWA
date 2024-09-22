@@ -1,0 +1,74 @@
+/*Estilo base para todos los elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background-color: rgb(119, 136, 153);
+}
+/*Estilos para el titulo de la pagina*/
+h1{
+    color: rgb(51, 46, 46);/*Cambia el color del texto a negro gris*/
+    font-size: 25px;/*Cambia el tamaño de la fuente a 25px*/
+    margin-top: 20px;/*Agrega un margen superior de 20px*/
+    text-align: center;/*Agrega el texto al centro*/
+}
+
+/*Estilos para el contenedeor principal*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(47, 79, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px, 90px;
+}
+
+/*Estilos para la seccio de contenido*/
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Estilos para las tarjetas dentro de la seccion de contenido*/
+.content-section .card{
+    flex: 1;
+    margin: 20px, 20px;
+    background-color: rgb(112, 128, 144);
+    box-shadow: 0px 2px 8px 0px rgb(185, 193, 202);
+}
+
+/*Estilos para las imagenes dentro de las tarjetas*/
+.content-section .card img{
+    width: 100%;
+    height: auto;
+}
+
+/*Estilos para los encabezados dentro de las tarjetas*/
+.content-section .card h2{
+    margin: 15px 0px;
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+/*Estilos para los parrafos dentro de las tarjetas*/
+.content-section .card p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Estilos para las pantaññas mas pequeñas (Maximo ancho de 768px)*/
+@media screen and (max-width: 768px){
+    .content-section{
+        flex-direction: column;
+    }
+}

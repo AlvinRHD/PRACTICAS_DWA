@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-areas: "overlay";
+    }
+
+    .overlay{
+        grid-area: overlay;
+        position: absolute;
+        z-index: 1;/*Ubicacion del elemento*/
+        background-color: bisque;
+        padding: 50px;
+    }
+
+    .content{
+        grid-area: overlay;/*Especificar area*/
+        position: relative;/*posicionar un objeto*/
+        background-color: aqua;
+        padding: 50px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="overlay">Contenido superpuesto</div>
+        <div class="content">Contenido principal</div>
+    </div>
+</body>
+</html>

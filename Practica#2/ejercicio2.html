@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<style>
+
+    body{
+        background-color: #041220;/*Aqui solo le estamos dando color a nuestra pagina*/
+    }
+    
+    .portafolio {/*Este es nuestro contenedoer principal y sus estilos*/
+        display: grid;/*Esto nos permite dividir nuestro contenido en filas o columnas*/
+        grid-template-columns: repeat(2, 1fr);/*Esto define las columnas*/
+        gap: 20px;/*Este es el espacio entre las celdas*/
+        padding: 20px;/*Esto da espacio alrededor del contenedor*/
+    }
+
+    .proyecto {
+        background-color: #a56f6f;/*Aqui le estamos dando color a nuestra reticula*/
+        border-radius: 10px;/*Aqui le damos un borde de 10px para que no se vea cuadrado*/
+    }
+
+    .contenido {/*Esta es la clase del contenido que tenemos dentro de la reticula*/
+        display: flex;/*Aqui use flex para que nuestro boton de mas inf no se alargue al tamaño de la reticula*/
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .icono img {
+        width: 40px;/*Esto es lo ancho del icono*/
+        height: 40px;/*Esto es lo alto del icono*/
+    }
+
+    .boton-mas {/*Esta es la clase del boton y sus estilos*/
+        display: grid;
+        background-color: #041220;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+</style>
+
+<body>
+    <div class="portafolio"><!--Aqui tenemos nuestro contenedor principal-->
+        <div class="proyecto">
+            <div class="contenido">
+                <div class="icono"><!--Esta es la clase del icono-->
+                    <img src="img/iconos/icons8-computadora-96.png" alt="icono">
+                </div>
+                <h2>Proyecto 1-Computadoras</h2>
+                <p>Las necesitamos para toda la vida</p>
+                <a target="_blank" href="https://www.omnisport.com/categorias/computadoras" class="boton-mas">Más inf</a>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="contenido">
+                <div class="icono">
+                    <img src="img/iconos/icons8-computadora-96.png" alt="icono">
+                </div>
+                <h2>Proyecto 2-Computadoras</h2>
+                <p>Las necesitamos para toda la vida</p>
+                <a target="_blank" href="https://www.omnisport.com/categorias/computadoras" class="boton-mas">Más inf</a>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="contenido">
+                <div class="icono">
+                    <img src="img/iconos/icons8-space-96.png" alt="icono">
+                </div>
+                <h2>Proyecto 3-Espacio</h2>
+                <p>Algun dia no muy cerca viviremos lejos de la tierra</p>
+                <a target="_blank" href="https://encyclopaedia.herdereditorial.com/wiki/Espacio" class="boton-mas">Más inf</a>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="contenido">
+                <div class="icono">
+                    <img src="img/iconos/icons8-space-96.png" alt="icono">
+                </div>
+                <h2>Proyecto 4-Espacio</h2>
+                <p>Algun dia no muy cerca viviremos lejos de la tierra</p>
+                <a target="_blank" href="https://encyclopaedia.herdereditorial.com/wiki/Espacio" class="boton-mas">Más inf</a>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="contenido">
+                <div class="icono">
+                    <img src="img/iconos/icons8-teléfono-celular-96.png" alt="icono">
+                </div>
+                <h2>Proyecto 5-Celulares</h2>
+                <p>Dejemos un momento el celular y reflexionemos</p>
+                <a target="_blank" href="https://www.xataka.com/analisis/google-pixel-7-pro-analisis-caracteristicas-precio-especificaciones" class="boton-mas">Más inf</a>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="contenido">
+                <div class="icono">
+                    <img src="img/iconos/icons8-teléfono-celular-96.png" alt="icono">
+                </div>
+                <h2>Proyecto 6-Celulares</h2>
+                <p>Dejemos un momento el celular y reflexionemos</p>
+                <a target="_blank" href="https://www.xataka.com/analisis/google-pixel-7-pro-analisis-caracteristicas-precio-especificaciones" class="boton-mas">Más inf</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
