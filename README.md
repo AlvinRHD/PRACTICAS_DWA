@@ -2,4 +2,4 @@
 
 Practicas Diseño Web Adaptable - UNIVO
 
-![Imagen descriptiva de lenguaje usado](Practica1/imgreference.jpg)
+![Imagen descriptiva de lenguaje usado](imgreference.jpg)
