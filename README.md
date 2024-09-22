@@ -1,5 +1,5 @@
-# PRACTICAS_DWA 
+# Practicas_DWA_Cll23
 
 Practicas Diseño Web Adaptable - UNIVO
 
-![Imagen descriptiva de lenguaje usado](Practica#1/imgreference.jpg)
+![Imagen descriptiva de lenguaje usado](Practica1/imgreference.jpg)
